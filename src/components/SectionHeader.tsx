@@ -1,7 +1,4 @@
-interface SectionHeaderProps {
-    title: string;
-    description?: string;
-}
+import type { SectionHeaderProps } from "../types/types";
 const SectionHeader = ({title, description} : SectionHeaderProps) => {
   return (
     <div className="mb-8 text-center">
