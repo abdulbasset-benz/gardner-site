@@ -21,24 +21,24 @@ const Hero = () => {
       </div>
 
       {/* Hero content */}
-      <div className="relative z-20 flex flex-col items-center justify-center h-full px-4 text-center">
+      <div className="relative z-20 flex flex-col items-center justify-center pt-40 px-4 text-center">
         <p className="text-accent text-xs sm:text-sm md:text-base font-bold uppercase tracking-wide font-poppins mb-2">
           Jardinage & Paysagisme
         </p>
 
-        <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold text-white font-poppins capitalize leading-tight max-w-2xl sm:max-w-3xl mb-4">
+        <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl lg:max-w-5xl font-bold text-white font-poppins capitalize leading-tight max-w-2xl sm:max-w-3xl mb-4 motion-translate-x-in-[-18%] motion-translate-y-in-[0%] motion-delay-[2ms] motion-delay-[0ms]/translate">
           Imaginez un <span className="text-accent">jardin</span> qui vous{" "}
           <span className="text-accent">apaise</span> dès le premier regard
         </h1>
 
-        <p className="text-base sm:text-lg md:text-xl text-gray-300 max-w-md sm:max-w-lg mb-8">
+        <p className="text-sm  md:text-xl text-slate-400 max-w-sm sm:max-w-lg mb-8 motion-translate-x-in-[0%] motion-translate-y-in-[-18%] motion-opacity-in-[0%] motion-duration-[500ms]/opacity">
           Créez un espace extérieur où chaque détail invite à la détente, à la
           convivialité et au plaisir de se retrouver avec ceux que vous aimez.
         </p>
 
         <div className="z-40">
           <Button
-            className="bg-accent text-primary text-md capitalize rounded-xl hover:bg-accent/90 cursor-pointer px-6 py-3"
+            className="bg-accent text-primary text-md capitalize rounded-xl hover:bg-accent/90 cursor-pointer px-6 py-3 motion-translate-x-in-[25%] motion-translate-y-in-[0%] motion-delay-[4ms] motion-delay-[0ms]/translate"
             size="lg"
           >
             contactez-nous
@@ -47,7 +47,7 @@ const Hero = () => {
       </div>
 
       {/* Scroll indicator */}
-      <div className="absolute bottom-6 left-1/2 transform -translate-x-1/2 z-30 animate-bounce text-accent text-2xl border-2 border-accent rounded-full p-2">
+      <div className="absolute bottom-15 left-1/2 transform -translate-x-1/2 z-30 animate-bounce text-accent text-2xl border-2 border-accent rounded-full p-2">
         ↓
       </div>
     </div>

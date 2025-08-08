@@ -20,7 +20,7 @@ const Navigation = () => {
         <img src={Logo} alt="" />
         <h1 className="text-3xl text-white font-bold font-poppins capitalize hidden lg:block">Gardenia landscape</h1>
       </div>
-      <div className="hidden md:block">
+      <div className="hidden lg:block">
         <ul>
           {navItems.map((item) => (
             <li key={item.name} className="inline-block mx-4">
@@ -31,7 +31,7 @@ const Navigation = () => {
           ))}
         </ul>
       </div>
-      <div className="md:hidden">
+      <div className="lg:hidden">
         <button
           onClick={toggleMenu}
           className="text-accent hover:text-accent/80"
