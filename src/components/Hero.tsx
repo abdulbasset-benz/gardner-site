@@ -1,5 +1,4 @@
 import heroImage from "@/assets/heroImage.png";
-import Navigation from "./Navigation";
 import { Button } from "./ui/button";
 
 const Hero = () => {
@@ -15,10 +14,8 @@ const Hero = () => {
       {/* Dark overlay */}
       <div className="absolute inset-0 bg-black/50 z-10" />
 
-      {/* Navigation */}
-      <div className="relative z-30">
-        <Navigation />
-      </div>
+      
+      
 
       {/* Hero content */}
       <div className="relative z-20 flex flex-col items-center justify-center pt-40 px-4 text-center">

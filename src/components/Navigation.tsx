@@ -15,7 +15,8 @@ const Navigation = () => {
     setIsOpen(!isOpen);
   };
   return (
-    <nav className="container mx-auto flex items-center justify-between p-6 shadow-md z-10 sticky top-0">
+    <nav className="sticky top-0 bg-black/10 backdrop-blur-md shadow-md z-50 w-full">
+        <div className="container mx-auto flex items-center justify-between p-6">
       <div className="flex items-center gap-2">
         <img src={Logo} alt="" />
         <h1 className="text-3xl text-white font-bold font-poppins capitalize hidden lg:block">Gardenia landscape</h1>
@@ -57,6 +58,7 @@ const Navigation = () => {
             </ul>
           </div>
         )}
+      </div>
       </div>
     </nav>
   );
