@@ -17,3 +17,10 @@ export interface ServiceProps {
     description?: string;
     icon?: string;
 }
+
+export interface StepsProps {
+    id:number;
+    title: string;
+    desc: string;
+    icon: string;
+}
