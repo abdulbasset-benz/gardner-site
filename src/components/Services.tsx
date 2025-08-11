@@ -61,7 +61,7 @@ const services: ServiceProps[] = [
 
 const Services = () => {
   return (
-    <div className="bg-gray-300/20 p-4 mt-10">
+    <div className="bg-[#DCE8CF] pt-10 px-4">
       <SectionHeader
         title="Nos Services"
         description="Équipements de pointe et produits écologiques pour une pelouse saine et des aménagements paysagers élégants."
