@@ -13,15 +13,20 @@ const experienceData: ExperienceItem[] = [
 
 const Experience = () => {
   return (
-    <div className="grid grid-cols-1 sm:grid-cols-3 gap-6 max-w-5xl mx-auto p-6">
-      <SectionHeader
-        title="notre expertise"
-        description="We have a proven track record of delivering exceptional results in our field."
-      />
-      {experienceData.map((exp) => (
-        <ExpCard key={exp.id} item={exp} />
-      ))}
-    </div>
+    <section className="py-20 bg-gradient-to-b from-gray-50 to-white">
+      <div className="max-w-7xl mx-auto px-6">
+        <SectionHeader
+          title="Notre Expertise"
+          description="Une expérience prouvée dans l'aménagement paysager avec des résultats exceptionnels."
+        />
+        
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mt-16">
+          {experienceData.map((exp) => (
+            <ExpCard key={exp.id} item={exp} />
+          ))}
+        </div>
+      </div>
+    </section>
   );
 };
 
