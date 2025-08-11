@@ -3,7 +3,7 @@ import { Button } from "./ui/button";
 
 const Hero = () => {
   return (
-    <div className="relative h-screen w-full overflow-hidden">
+    <div className="relative h-screen w-full overflow-hidden ">
       {/* Background Image */}
       <img
         src={heroImage}
