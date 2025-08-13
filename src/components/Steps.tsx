@@ -29,21 +29,21 @@ const steps: StepsProps[] = [
 const Steps = () => {
   return (
     <div className="bg-[#FFFFFF] pt-10 px-4">
-        <SectionHeader
-          title="Comment ça marche ?"
-          description="Notre processus est simple et transparent, conçu pour vous offrir la meilleure expérience possible."
-        />
-    <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8 sm:gap-10 md:gap-20 mx-auto px-6 sm:px-8 lg:px-12 py-16">
-      {steps.map((step) => (
-        <StepsCard
-          key={step.id}
-          id={step.id}
-          title={step.title}
-          desc={step.desc}
-          icon={step.icon}
-        />
-      ))}
-    </div>
+      <SectionHeader
+        title="Comment ça marche ?"
+        description="Notre processus est simple et transparent, conçu pour vous offrir la meilleure expérience possible."
+      />
+      <div className="grid grid-cols-1 md:grid-cols-3 gap-8 sm:gap-10 md:gap-20 mx-auto px-6 sm:px-8 lg:px-12 py-16">
+        {steps.map((step) => (
+          <StepsCard
+            key={step.id}
+            id={step.id}
+            title={step.title}
+            desc={step.desc}
+            icon={step.icon}
+          />
+        ))}
+      </div>
     </div>
   );
 };
